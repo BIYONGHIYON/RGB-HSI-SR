@@ -29,6 +29,9 @@ def main():
             text = text.replace('https://github.com/BIYONGHIYON/CtrS/tree/main/SSA-MRN',
                                 'https://github.com/BIYONGHIYON/RGB-HSI-SR/tree/main/SSA-MRN')
             page.write_text(text, encoding='utf-8')
+    for row in rows:
+        row['bytes'] = (target / row['file']).stat().st_size
+    (target / 'manifest.json').write_text(json.dumps(rows, ensure_ascii=False, indent=2)+'\n')
     source_commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     metadata = {
         'repository': 'BIYONGHIYON/RGB-HSI-SR', 'source_commit': source_commit,
