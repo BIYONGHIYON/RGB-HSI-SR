@@ -1,6 +1,6 @@
 # RGB-HSI-SR
 
-고해상도 RGB와 저해상도 HSI를 결합하는 **개인 RGB–HSI 공간 초해상도 연구**입니다. CtrS에서 진행한 RGB01~RGB11 연구를 분리했습니다. 팀의 PAN–MS 팬샤프닝 재현·성능 개선은 [CtrS](https://github.com/BIYONGHIYON/CtrS)에서 진행합니다.
+고해상도 RGB의 공간 정보를 활용해 저해상도 HSI를 복원하는 **RGB 유도 HSI 초해상도 연구**입니다. SSA-MRN 기반 모델의 분광 특징, 디코더 구조와 손실 함수를 비교하며 공간·분광 복원 성능을 평가합니다.
 
 | 문서 | 내용 |
 |---|---|
@@ -9,7 +9,6 @@
 | [이전 실험](SSA-MRN/docs/previous_experiments.md) | RGB01~11과 예비실험 |
 | [204밴드 웹뷰어](https://biyonghiyon.github.io/RGB-HSI-SR/ssa-mrn/) | RGB11의 고정 5장면 |
 | [실행 방법](docs/setup.md) | 환경·데이터 경로·원격 실행 준비 |
-| [이관 기록](MIGRATION.md) | 출처, 보존 파일 및 서버 가중치 범위 |
 
 ## 현재 결과
 
@@ -32,4 +31,4 @@ git clone --recurse-submodules https://github.com/BIYONGHIYON/RGB-HSI-SR.git
 cd RGB-HSI-SR
 ```
 
-기존 체크포인트와 스크립트의 상대 경로 호환성을 위해 `SSA-MRN/` 구조를 유지합니다. 공식 upstream 및 PAN–MS 기반 코드·보고서는 연구 출처 확인용 스냅샷입니다. 원본 데이터는 포함하지 않습니다. Git에 이미 보관된 가중치는 복사했고, 서버에만 있는 가중치는 기존 보고서의 위치·해시를 보존했습니다. 새 학습은 이 이관 작업에서 시작하지 않았습니다.
+모델 코드와 실험 보고서는 `SSA-MRN/`에 있습니다. 원본 데이터는 포함하지 않으며, 가중치와 평가 결과의 위치·해시는 각 실험 보고서에서 확인할 수 있습니다.
