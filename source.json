@@ -1,6 +1,6 @@
 {
   "repository": "BIYONGHIYON/RGB-HSI-SR",
-  "source_commit": "b0f9ce61b74d03d63dfd1df67280755f21fe0ab4",
+  "source_commit": "76c942a3e9ced7d826cb47a62683ce7f06979710",
   "model": "rgb11_gradient_suite",
   "weight_epoch": 4,
   "checkpoint_sha256": "40e6170da46633004ee292b2434898f1b1e67dcbbd9a3ecf0deef78568a65f65",
