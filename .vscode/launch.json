@@ -1,0 +1,63 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "LIB: triple17 23tap spectral tiles smoke",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/SSA-MRN/scripts/train_lib.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "args": [
+        "--config",
+        "${workspaceFolder}/SSA-MRN/configs/lib_rgb_hsi_triple17_k4_spectral_tiles.json",
+        "--smoke"
+      ]
+    },
+    {
+      "name": "LIB: triple17 23tap spectral tiles train (new run)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/SSA-MRN/scripts/train_lib.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "args": [
+        "--config",
+        "${workspaceFolder}/SSA-MRN/configs/lib_rgb_hsi_triple17_k4_spectral_tiles.json"
+      ]
+    },
+    {
+      "name": "LIB: export full test, graphs and five examples",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/SSA-MRN/scripts/export_results.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "args": [
+        "--checkpoint",
+        "${input:checkpoint}",
+        "--data-root",
+        "${input:dataRoot}",
+        "--output-dir",
+        "${input:reportOutput}"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "checkpoint",
+      "type": "promptString",
+      "description": "Existing best.pt absolute path"
+    },
+    {
+      "id": "reportOutput",
+      "type": "promptString",
+      "description": "New report output absolute path"
+    },
+    {
+      "id": "dataRoot",
+      "type": "promptString",
+      "description": "LIB-HSI dataset absolute path"
+    }
+  ]
+}

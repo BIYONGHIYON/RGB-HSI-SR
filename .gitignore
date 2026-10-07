@@ -1,0 +1,135 @@
+.DS_Store
+backups/
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.uv-cache/
+venv/
+.env
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Local datasets
+SSA-MRN/data/dataset/
+**/data/raw/**
+**/data/processed/**
+!**/data/raw/.gitkeep
+!**/data/processed/.gitkeep
+
+# Experiment artifacts
+**/experiments/checkpoints/**
+**/experiments/logs/**
+**/experiments/results/**
+**/scripts/outputs/**
+!**/experiments/checkpoints/.gitkeep
+!**/experiments/logs/.gitkeep
+!**/experiments/results/.gitkeep
+
+# Model and array files
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.npy
+*.npz
+*.mat
+
+# Local Python and editor artifacts
+env/
+ENV/
+pyvenv.cfg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+.env.*
+tempCodeRunnerFile.py
+
+# Local Java runtime created by an editor extension.
+SSA-MRN/scripts/oracleJdk-*/
+
+# Small, reviewable LIB smoke-test figure; datasets/checkpoints stay local.
+!SSA-MRN/experiments/results/lib_rgb_hsi_smoke/
+!SSA-MRN/experiments/results/lib_rgb_hsi_smoke/comparison.png
+!SSA-MRN/experiments/results/lib_rgb_hsi_smoke/metrics.json
+
+# Share only these QuickBird smoke-test results.
+!SSA-MRN/experiments/results/quickbird_smoke/
+!SSA-MRN/experiments/results/quickbird_smoke/README.md
+!SSA-MRN/experiments/results/quickbird_smoke/random_output_32.npy
+!SSA-MRN/experiments/results/quickbird_smoke/random_output_256.npy
+!SSA-MRN/experiments/results/quickbird_smoke/random_output_preview_32.png
+!SSA-MRN/experiments/results/quickbird_smoke/random_output_preview_256.png
+!SSA-MRN/experiments/results/quickbird_smoke/pan_input_32.png
+!SSA-MRN/experiments/results/quickbird_smoke/pan_input_256.png
+!SSA-MRN/experiments/results/quickbird_smoke/ms_input_rgb_32.png
+!SSA-MRN/experiments/results/quickbird_smoke/ms_input_rgb_256.png
+
+# Reproducible trained models, logs and test outputs (raw H5 stays local).
+!SSA-MRN/experiments/checkpoints/qb_full/
+!SSA-MRN/experiments/checkpoints/qb_full/latest.pt
+!SSA-MRN/experiments/checkpoints/gf2_full/
+!SSA-MRN/experiments/checkpoints/gf2_full/latest.pt
+!SSA-MRN/experiments/checkpoints/wv3_full/
+!SSA-MRN/experiments/checkpoints/wv3_full/latest.pt
+!SSA-MRN/experiments/logs/qb_full.log
+!SSA-MRN/experiments/logs/gf2_full.log
+!SSA-MRN/experiments/logs/wv3_full.log
+!SSA-MRN/experiments/results/quickbird_trained/
+!SSA-MRN/experiments/results/quickbird_trained/*.png
+!SSA-MRN/experiments/results/quickbird_trained/metrics.json
+!SSA-MRN/experiments/results/quickbird_trained/prediction_bands.npy
+!SSA-MRN/experiments/results/gaofen2_trained/
+!SSA-MRN/experiments/results/gaofen2_trained/*.png
+!SSA-MRN/experiments/results/gaofen2_trained/metrics.json
+!SSA-MRN/experiments/results/gaofen2_trained/prediction_bands.npy
+!SSA-MRN/experiments/results/worldview3_trained/
+!SSA-MRN/experiments/results/worldview3_trained/*.png
+!SSA-MRN/experiments/results/worldview3_trained/metrics.json
+!SSA-MRN/experiments/results/worldview3_trained/prediction_bands.npy
+
+# K=6 single-sample test outputs shown in SSA-MRN/README.md.
+!SSA-MRN/experiments/results/quickbird_k6_trained/
+!SSA-MRN/experiments/results/quickbird_k6_trained/*.png
+!SSA-MRN/experiments/results/quickbird_k6_trained/metrics.json
+!SSA-MRN/experiments/results/quickbird_k6_trained/prediction_bands.npy
+!SSA-MRN/experiments/results/gaofen2_k6_trained/
+!SSA-MRN/experiments/results/gaofen2_k6_trained/*.png
+!SSA-MRN/experiments/results/gaofen2_k6_trained/metrics.json
+!SSA-MRN/experiments/results/gaofen2_k6_trained/prediction_bands.npy
+!SSA-MRN/experiments/results/worldview3_k6_trained/
+!SSA-MRN/experiments/results/worldview3_k6_trained/*.png
+!SSA-MRN/experiments/results/worldview3_k6_trained/metrics.json
+!SSA-MRN/experiments/results/worldview3_k6_trained/prediction_bands.npy
+
+# Reviewable LIB trained results.
+!SSA-MRN/experiments/results/lib_rgb_hsi_trained/
+!SSA-MRN/experiments/results/lib_rgb_hsi_trained/*.png
+!SSA-MRN/experiments/results/lib_rgb_hsi_trained/*.json
+
+!SSA-MRN/experiments/results/lib_registration/
+!SSA-MRN/experiments/results/lib_registration/*.json
+!SSA-MRN/experiments/results/lib_registration/*.png
+
+!SSA-MRN/experiments/results/lib_rgb_hsi_aligned_256_trained/
+!SSA-MRN/experiments/results/lib_rgb_hsi_aligned_256_trained/*.png
+!SSA-MRN/experiments/results/lib_rgb_hsi_aligned_256_trained/*.json
+
+# Shared LIB aligned 256 model and reproducibility files.
+!SSA-MRN/experiments/checkpoints/lib_rgb_hsi_aligned_256_b4/
+!SSA-MRN/experiments/checkpoints/lib_rgb_hsi_aligned_256_b4/best.pt
+!SSA-MRN/experiments/checkpoints/lib_rgb_hsi_aligned_256_b4/latest.pt
+!SSA-MRN/experiments/checkpoints/lib_rgb_hsi_aligned_256_b4/checksums.json
+!SSA-MRN/experiments/checkpoints/lib_rgb_hsi_aligned_256_b4/README.md
+!SSA-MRN/experiments/results/lib_rgb_hsi_aligned_256_trained/random_samples/
+!SSA-MRN/experiments/results/lib_rgb_hsi_aligned_256_trained/random_samples/**
+
+# Temporary site deployment build
+site/

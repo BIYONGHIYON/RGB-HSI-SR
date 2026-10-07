@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "selection_split": "validation",
+  "train_scenes": 393,
+  "validation_scenes": 45,
+  "test_reserved": true,
+  "seed": 42,
+  "note": "Independent ablations against 00_baseline10; warm variants compare only each other. No automatic training.",
+  "jobs": [
+    {
+      "label": "00_baseline10",
+      "stage": 0,
+      "purpose": "\ub3d9\uc77c \uc870\uac74 10\uc5d0\ud3ed \uae30\uc900 \ubaa8\ub378",
+      "config": "SSA-MRN/configs/pilot/00_baseline10.json",
+      "compare_to": null
+    },
+    {
+      "label": "01_rgb_diagnostic",
+      "stage": 1,
+      "purpose": "\uac00\uc911\uce58 \uace0\uc815 RGB \ud750\ub9bc\u00b7\uc774\ub3d9\u00b7\uc81c\uac70 \uc9c4\ub2e8",
+      "config": "SSA-MRN/configs/pilot/01_rgb_diagnostic.json",
+      "compare_to": null
+    },
+    {
+      "label": "02_warm_control10",
+      "stage": 2,
+      "purpose": "\ud604\uc7ac \uac00\uc911\uce58\uc5d0\uc11c LR1e-4 \ucd94\uac00 \ud559\uc2b5 \ub300\uc870\uad70",
+      "config": "SSA-MRN/configs/pilot/02_warm_control10.json",
+      "compare_to": null
+    },
+    {
+      "label": "02_warm_low10",
+      "stage": 2,
+      "purpose": "\uac19\uc740 \uac00\uc911\uce58\uc5d0\uc11c LR1e-5 \ucd94\uac00 \ud559\uc2b5",
+      "config": "SSA-MRN/configs/pilot/02_warm_low10.json",
+      "compare_to": "02_warm_control10"
+    },
+    {
+      "label": "03_aligned_attention10",
+      "stage": 3,
+      "purpose": "attention \uc804\uce58\ub9cc \uc81c\uac70",
+      "config": "SSA-MRN/configs/pilot/03_aligned_attention10.json",
+      "compare_to": "00_baseline10"
+    },
+    {
+      "label": "04_gated_detail10",
+      "stage": 4,
+      "purpose": "RGB \uace0\uc8fc\ud30c \uacbd\ub85c\uc640 HSI \uc870\uac74 gate",
+      "config": "SSA-MRN/configs/pilot/04_gated_detail10.json",
+      "compare_to": "00_baseline10"
+    },
+    {
+      "label": "05_global_encoder10",
+      "stage": 5,
+      "purpose": "LR \ubd84\uad11 \uadf8\ub8f9\u00b7\uc804\uc5ed \ud2b9\uc9d5 \ud63c\ud569",
+      "config": "SSA-MRN/configs/pilot/05_global_encoder10.json",
+      "compare_to": "00_baseline10"
+    },
+    {
+      "label": "06_local_alignment10",
+      "stage": 6,
+      "purpose": "LR \ud2b9\uc9d5 \uc870\uac74 \uad6d\uc18c \uc815\ud569\uacfc \uc138\ubd80 gain",
+      "config": "SSA-MRN/configs/pilot/06_local_alignment10.json",
+      "compare_to": "00_baseline10"
+    }
+  ]
+}
