@@ -32,7 +32,6 @@
   "protected_artifacts_identical": 402,
   "team_pan_artifacts_identical": 66,
   "team_removed_paths_present_in_personal": 431,
-  "ecrformer_unchanged": true,
   "validation": {
     "team_unittest": "12 passed",
     "personal_unittest": "61 run; 58 passed, 3 CUDA tests skipped",
@@ -40,5 +39,7 @@
     "python_compile": "passed",
     "windows_task_registration": "not run; server untouched",
     "full_dataset_evaluation": "not run; original metrics unchanged"
-  }
+  },
+  "initial_team_snapshot_ecrformer_unchanged": true,
+  "final_ctrs_scope": "PAN-MS only; ECRformer removed following explicit user request; complete original Git bundle preserved locally"
 }
