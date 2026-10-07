@@ -2,7 +2,7 @@
   "source_repository": "https://github.com/BIYONGHIYON/CtrS",
   "source_commit": "23c4d9b86fed044d4578d397e533a4f9e9e4ada5",
   "destination_repository": "https://github.com/BIYONGHIYON/RGB-HSI-SR",
-  "history_policy": "Source Git history remains in CtrS; this repository begins with a traceable snapshot.",
+  "history_policy": "Complete source history is preserved in a local verified Git bundle; CtrS public history is rewritten to PAN-MS only. This repository starts with a traceable snapshot.",
   "source_sha256": {
     ".gitignore": "52fa84bc9a977a69eb51b37cfec0820c1773ae4c3475f910521bd452952f372c",
     ".gitmodules": "9c72eb78a865fb1f0c8609bb90defcebf3b3f497429a7e9f1359e3de1865f634",
