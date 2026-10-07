@@ -1,0 +1,18 @@
+{
+  "repository": "BIYONGHIYON/RGB-HSI-SR",
+  "source_commit": "b0f9ce61b74d03d63dfd1df67280755f21fe0ab4",
+  "model": "rgb11_gradient_suite",
+  "weight_epoch": 4,
+  "checkpoint_sha256": "40e6170da46633004ee292b2434898f1b1e67dcbbd9a3ecf0deef78568a65f65",
+  "selection": "Validation MSE within gradient suite; latest representative by PSNR and SAM among matching tile evaluations. RGB09 has lower mean MSE.",
+  "evaluation": "LIB-HSI synthetic area x4; 75 test scenes; 300 tiles; LR consistency",
+  "files_sha256": {
+    "index.html": "55761b09a785552170fd970d67ca7bf38d11df4057fd33f414ebc3b6122514d5",
+    "manifest.json": "db86905f48b1f4cfc1dea6984b969a03d2501440ba5204392d257d97699f2308",
+    "sample_01.html": "b0c6da9096360158895bbfa7fd1fcafa819d02356f1d7625d81b52393289ec65",
+    "sample_02.html": "67f1eb340dead5ee90716340bf8d800bf7bd49d0fc26e774b61820ed7d17f8bf",
+    "sample_03.html": "cf3af3e41ebb54857d0af18ecf6714a15ecb390e087f6c5ff994c8bb12200405",
+    "sample_04.html": "b1c81f15fcc5035eca7893b5471ecc1748d04a9085be9fe1a9ad90f5bb9a38a6",
+    "sample_05.html": "4ab69a3d925f47754df568720ab2aa9dec43c4fbdde86ff07f6b9e39db10a58e"
+  }
+}
