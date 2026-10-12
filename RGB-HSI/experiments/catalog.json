@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "directory": "1_latent_compression",
+    "title": "8특징 분광 압축",
+    "status": "평가 완료",
+    "improvement": "비교 기준"
+  },
+  {
+    "id": 2,
+    "directory": "2_registration_tiles",
+    "title": "RGB 정합과 256 타일",
+    "status": "평가 완료",
+    "improvement": "직접 비교 불가"
+  },
+  {
+    "id": 3,
+    "directory": "3_grouped_compression",
+    "title": "그룹 분광 압축과 23탭 확대",
+    "status": "평가 완료",
+    "improvement": "직접 비교 불가"
+  },
+  {
+    "id": 4,
+    "directory": "4_rgb_independent_branches",
+    "title": "RGB별 독립 복원 경로",
+    "status": "평가 완료",
+    "improvement": "직접 비교 불가"
+  },
+  {
+    "id": 5,
+    "directory": "5_bilinear_resampling",
+    "title": "내부 Bilinear 보간",
+    "status": "평가 완료",
+    "improvement": "개선 없음"
+  },
+  {
+    "id": 6,
+    "directory": "6_spectral_features_loss",
+    "title": "17특징과 분광 방향 손실",
+    "status": "평가 완료",
+    "improvement": "부분 개선"
+  },
+  {
+    "id": 7,
+    "directory": "7_lr_mean_consistency",
+    "title": "LR 평균 일관성 보정",
+    "status": "평가 완료",
+    "improvement": "개선"
+  },
+  {
+    "id": 8,
+    "directory": "8_joint_decoder",
+    "title": "공동 분광 디코더",
+    "status": "평가 완료",
+    "improvement": "개선"
+  },
+  {
+    "id": 9,
+    "directory": "9_validation_candidate_search",
+    "title": "축소 학습셋의 구조 후보 비교",
+    "status": "검증 완료",
+    "improvement": "판단 보류"
+  },
+  {
+    "id": 10,
+    "directory": "10_candidate_extended_training",
+    "title": "후보의 추가 학습 비교",
+    "status": "검증 완료",
+    "improvement": "판단 보류"
+  },
+  {
+    "id": 11,
+    "directory": "11_rgb_gated_detail",
+    "title": "RGB 고주파 게이트",
+    "status": "평가 완료",
+    "improvement": "개선 없음"
+  },
+  {
+    "id": 12,
+    "directory": "12_detail_finetuning",
+    "title": "고주파 모델의 저학습률 추가 학습",
+    "status": "평가 완료",
+    "improvement": "개선"
+  },
+  {
+    "id": 13,
+    "directory": "13_joint_finetuning_control",
+    "title": "공동 디코더의 저학습률 대조",
+    "status": "검증 완료",
+    "improvement": "판단 보류"
+  },
+  {
+    "id": 14,
+    "directory": "14_hsi_gradient_loss",
+    "title": "HSI 경계 손실 비교",
+    "status": "평가 완료",
+    "improvement": "미세 개선"
+  }
+]

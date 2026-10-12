@@ -1,0 +1,5 @@
+# Evidence files retain original bytes, including registration manifests.
+RGB-HSI/**/results/** -text
+RGB-HSI/**/checkpoints/** -text
+*.pt binary
+*.png binary

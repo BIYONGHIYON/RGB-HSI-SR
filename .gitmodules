@@ -1,3 +1,3 @@
-[submodule "SSA-MRN/references/upstream"]
-	path = SSA-MRN/references/upstream
+[submodule "RGB-HSI/references/upstream"]
+	path = RGB-HSI/references/upstream
 	url = https://github.com/zhouchuanxu/SSA-MRN.git
